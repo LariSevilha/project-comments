@@ -1,0 +1,124 @@
+/* Cabeçalho */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Instagram Sans', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #262626;
+  text-align: center;
+}
+
+/* Contêiner principal */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário de comentários */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fafafa;
+  color: #262626;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0095f6;
+  outline: none;
+}
+
+form button {
+  background-color: #0095f6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #007bbd;
+}
+
+/* Lista de comentários */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 10px;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li p {
+  margin: 0;
+  word-wrap: break-word;
+}
+
+ul li strong {
+  font-size: 14px;
+  color: #262626;
+}
+
+ul li small {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+/* Contagem de comentários */
+.count {
+  font-size: 14px;
+  color: #8e8e8e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+}
